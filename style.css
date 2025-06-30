@@ -1,0 +1,388 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('../images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #2b2b2b;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+header {
+  background: linear-gradient(to right, #005f99, #003366);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.overlay h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #003366;
+}
+
+.overlay p {
+  font-size: 1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.btn {
+  background: #005f99;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.services {
+  background: #fff;
+  padding: 3rem 1rem;
+  border-radius: 8px;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #003366;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: #e0f1fb;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service h3 {
+  margin-top: 0;
+  color: #005f99;
+}
+
+.about, .contact {
+  padding: 3rem 1rem;
+  background: #fdfdfd;
+  border-radius: 8px;
+}
+
+.about h2, .contact h2 {
+  color: #003366;
+  text-align: center;
+}
+
+.about p, .contact p {
+  max-width: 800px;
+  margin: 1rem auto;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 8px;
+}
+
+.about {
+  background-color: #f8f9fa;
+  padding: 3rem 1rem;
+}
+
+.about .container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #005b96;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+/* Contact Section Styles */
+.contact {
+  padding: 3rem 1rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.contact p {
+  max-width: 700px;
+  margin: 1rem auto;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.contact a {
+  color: #005f99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a.btn {
+  display: inline-block;
+  background: #005f99;
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
+}
+
+.contact a.btn:hover {
+  background: #004266;
+}
+
+.contact h2 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact p,
+.contact a.btn {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.contact a.btn:hover {
+  transform: scale(1.05);
+}
+
+/* About Section Styles */
+.about {
+  padding: 3rem 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.about h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-block {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f0f7fc;
+  border-left: 5px solid #005f99;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  animation: slideIn 1s ease-in-out;
+}
+
+.about-block p {
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-block strong {
+  color: #005f99;
+  font-size: 1.1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Header Container */
+.site-header .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: linear-gradient(135deg, #dfefff, #f7fbff);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Title and Subtitle */
+.site-header h1 {
+  font-size: 2.5rem;
+  color: #002244;
+  margin-bottom: 0.5rem;
+  animation: slideDown 1s ease-out;
+}
+
+.site-header p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Navigation Menu */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  transition: 0.3s ease;
+}
+
+nav a {
+  text-decoration: none;
+  color: #005f99;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #005f99;
+  color: #fff;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #005f99;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    right: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
