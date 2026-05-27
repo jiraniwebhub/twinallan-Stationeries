@@ -60,6 +60,8 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  position: relative;
+  z-index: 20;
 }
 
 .brand {
@@ -77,6 +79,7 @@ textarea {
   display: flex;
   gap: 1.4rem;
   align-items: center;
+  z-index: 25;
 }
 
 .nav-links a {
@@ -702,6 +705,7 @@ textarea {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
+    z-index: 30;
   }
 
   .nav-links a {
